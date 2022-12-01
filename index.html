@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcia</title>
+</head>
+<body>
+  <h3>Aritmeticke operacie</h3>
+   <p id="sucet"></p>
+   <p id="odpocet"></p>
+   <p id="sucin"></p>
+   <p id="delenie"></p>
+
+<script>
+function spocitaj(a=4,b=2){
+
+  console.log(a,b)
+  console.log("Vykonavam matematicke operacie")
+  console.log("4+2=6")
+ 
+  return a + b;
+}
+console.log(spocitaj(4,2))
+document.getElementById("sucet").innerHTML = spocitaj();
+</script>
+
+<script>
+  function odcitaj(a,b){
+      console.log(a=4,b=2)
+      console.log("Vykonavam matematicke operacie")
+      console.log("4-2=2")
+    return a - b;
+  }
+  console.log(odcitaj(4,2))
+  document.getElementById("odpocet").innerHTML = odcitaj();
+</script>
+
+<script>
+  function vynasob(a,b){
+    console.log(a=4,b=2)
+    console.log("Vykonavam matematicke operacie")
+    console.log("4*2=8")
+    return a * b;
+  }
+  console.log(vynasob())
+  document.getElementById("sucin").innerHTML = vynasob();
+</script>
+<script>
+    function vydel(a,b){
+      console.log(a=4,b=2)
+      console.log("Vykonavam matematicke operacie")
+      console.log("4/2=2")
+      return a / b;
+    }
+    console.log(vydel())
+    document.getElementById("delenie").innerHTML = vydel();
+</script>
+ 
+</body>
+</html>
